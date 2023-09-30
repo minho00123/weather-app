@@ -4,35 +4,40 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css" integrity="sha512-NmLkDIU1C/C88wi324HBc+S2kLhi08PN5GDeUVVVC/BVt/9Izdsc9SVeVfA1UZbY3sHUlDSyRXhCzHfr6hmPPw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="stylesheet" href="style.css">
   <script defer src="index.js"></script>
   <title>Weather App</title>
 </head>
 <body>
-  <section class="container">
-    <article class="date-box">
-      <p class="year">2023년</p>
-      <p class="month">9월</p>
-      <p class="day">30일</p>
-      <p class="day-of-the-week">토요일</p>
-    </article>
-    <article class="location-box">서울</article>
-    <article class="temp-box">
-      <p class="temp">23℃</p>
-      <p class="feel-temp">22℃</p>
-      <p class="max-min-temp-box">
-        <p class="max-temp">23℃</p>
-        <p class="min-temp">19℃</p>
-      </p>
-    </article>
-    <article class="icon-box">
-      <p class="icon">☀️</p>
-      <p class="status">맑음</p>
-    </article>
-    <article class="etc-box">
-      <p class="humidity">72%</p>
-      <p class="wind-speed">4m/s</p>
-    </article>
-  </section>
+  <div class="wrapper">
+    <section class="container">
+      <article class="date-box">
+        <p class="day-of-the-week">토요일</p>
+        <p class="month-day-box">
+          <span class="year">2023년</span>
+          <span class="month">9월</span>
+          <span class="day">30일</span>
+        </p>
+      </article>
+      <article class="location-box">서울, 대한민국</article>
+      <article class="temp-box">
+        <p class="temp">23℃</p>
+        <p class="feel-temp">체감온도: 22℃</p>
+        <p class="max-min-temp-box">
+          <span class="max-temp">최고: 23℃</span>
+          <span class="min-temp">최저: 19℃</span>
+        </p>
+      </article>
+      <article class="icon-box">
+        <p class="icon">☀️</p>
+        <p class="status">맑음</p>
+      </article>
+      <article class="etc-box">
+        <p class="humidity">습도💦: 72%</p>
+        <p class="wind-speed">풍속💨: 4m/s</p>
+      </article>
+    </section>
+  </div>
 </body>
 </html>

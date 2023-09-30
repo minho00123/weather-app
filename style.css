@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700;900&display=swap');
+
+.wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #D9D9D9;
+  font-family: 'Noto Sans KR', sans-serif;
+  color: #0D0D0D;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 300px;
+  height: 600px;
+  box-shadow: 5px 5px .4em #737373;
+  background-color: #F2F2F2;
+  border-radius: 20px;
+}
+
+.date-box {
+  font-size: 1.5rem;
+}
+
+.day-of-the-week {
+  padding: 5px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.month-day-box {
+  padding: 5px;
+  font-size: 1rem;
+}
+
+
+.location-box {
+  margin: 20px;
+  font-size: 1.5rem;
+}
+
+.temp-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 10px;
+  padding: 20px;
+  box-shadow: 3px 2px .4em #737373;
+  border-radius: 20px;
+}
+
+.temp {
+  font-size: 4rem;
+  font-weight: 700;
+}
+
+.feel-temp {
+  padding: 15px;
+  font-size: 1.3rem;
+}
+
+.max-temp,
+.min-temp {
+  padding: 3px;
+  font-size: 0.9rem;
+}
+
+.max-temp {
+  color: red;
+}
+
+.min-temp {
+  color: blue;
+}
+
+.icon-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.icon {
+  font-size: 6rem;
+}
+
+.status {
+  margin: 20px;
+  font-size: 1.5rem;
+}
+
+.etc-box {
+  display: flex;
+  justify-content: space-between;
+  width: 230px;
+}
