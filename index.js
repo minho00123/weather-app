@@ -10,6 +10,6 @@ const dayEl = document.querySelector(".day");
 dayEl.textContent = dayNow;
 
 const fullDate = `${yearNow}년 ${monthNow}월 ${dateNow}일`;
-const fullDateEl = document.querySelector(".full-date");
-fullDateEl.textContent = fullDate;
+const dateEl = document.querySelector(".date");
+dateEl.textContent = fullDate;
 
