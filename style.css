@@ -26,13 +26,13 @@
   font-size: 1.5rem;
 }
 
-.day-of-the-week {
+.day {
   padding: 5px;
   font-weight: 700;
   text-align: center;
 }
 
-.month-day-box {
+.month-date-box {
   padding: 5px;
   font-size: 1rem;
 }

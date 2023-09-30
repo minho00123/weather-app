@@ -1,35 +1,15 @@
-// // let lat, long;
+const days = ["일요일", "월요일", "화요일", "수요일", "목요일", "금요일", "토요일"]
 
-// // navigator.geolocation.getCurrentPosition((position) => {
-// //   lat = position.coords.latitude;
-// //   long = position.coords.longitude;
-// // });
+const date = new Date();
+const yearNow = date.getFullYear();
+const monthNow = date.getMonth() + 1;
+const dateNow = date.getDate();
+const dayNow = days[date.getDay()];
 
-// // console.log(lat, long);
+const dayEl = document.querySelector(".day");
+dayEl.textContent = dayNow;
 
-// // const API_KEY = 'd2d5348210331fcddebc9b14ba077f23';
-// // const url = (`https://api.openweathermap.org/data/2.5/onecall?lat=37.532600&lon=127.024612&appid=${API_KEY}`)
+const fullDate = `${yearNow}년 ${monthNow}월 ${dateNow}일`;
+const fullDateEl = document.querySelector(".full-date");
+fullDateEl.textContent = fullDate;
 
-// // async function getWeatherInfo() {
-// //   const response = await fetch(url);
-// //   const data = await response.json();
-// //   console.log(data);
-// // }
-
-// // getWeatherInfo();
-
-// const url = 'http://worldtimeapi.org/api/timezone/America/New_York';
-
-// // async function getData() {
-// //   const response = await fetch(url);
-// //   const data = await response.json();
-// //   console.log(data);
-// // }
-
-// // getData();
-
-// const request = new Request(url);
-// fetch(request)
-//   .then(response => response.json())
-//   .then(data => console.log('Success:', data))
-//   .catch(error => console.log(`Error: ${error}`));
