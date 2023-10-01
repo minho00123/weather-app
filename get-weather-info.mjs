@@ -1,30 +1,3 @@
-const days = ["SUN", "MON", "TUE", "WED", "THU", "FRI", "SAT"]
-
-const date = new Date();
-const yearNow = date.getFullYear();
-const monthNow = date.getMonth() + 1;
-const dateNow = date.getDate();
-const dayNow = days[date.getDay()];
-
-const dayEl = document.querySelector(".day");
-dayEl.textContent = dayNow;
-
-const fullDate = `${monthNow}. ${dateNow}. ${yearNow}`;
-const dateEl = document.querySelector(".date");
-dateEl.textContent = fullDate;
-
-// function success(pos) {
-//   // let crd = pos.coords;
-
-//   console.log(pos);
-// }
-
-// function error(err) {
-//   console.warn(`ERROR(${err.code}): ${err.message}`);
-// }
-
-// navigator.geolocation.getCurrentPosition(success, error);
-
 const icons = {
   "Clear": "😎",
   "Rain": "☔️",
@@ -42,9 +15,10 @@ const statusEl = document.querySelector('.status');
 const humidityEl = document.querySelector('.humidity');
 const windSpeedEl = document.querySelector('.wind-speed');
 
-navigator.geolocation.getCurrentPosition(location => {
+export const getWeather = function() {
+  navigator.geolocation.getCurrentPosition(location => {
   let {latitude: lat, longitude: lon} = location.coords;
-  const API_KEY = '3988d5003f38edefca5986f9166ee8f1';
+  const API_KEY = '';
   const url = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=${API_KEY}&units=metric`;
   async function getWeatherInfo() {
     const response = await fetch(url);
@@ -61,4 +35,4 @@ navigator.geolocation.getCurrentPosition(location => {
     windSpeedEl.textContent = `💨: ${data["wind"]["speed"]}m/s`;
   }
   getWeatherInfo();
-})
+})};
