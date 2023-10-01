@@ -1,7 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700;900&display=swap');
 
-.wrapper {
+.flex {
   display: flex;
+}
+
+.wrapper {
   justify-content: center;
   align-items: center;
   height: 100vh;
@@ -11,7 +14,6 @@
 }
 
 .container {
-  display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
@@ -50,10 +52,10 @@
   padding: 10px 43px;
   box-shadow: 3px 2px .4em #737373;
   border-radius: 20px;
+  font-weight: 700;
 }
 
 .temp-box {
-  display: flex;
   flex-direction: column;
   align-items: center;
   margin: 10px;
@@ -79,15 +81,14 @@
 }
 
 .max-temp {
-  color: red;
+  color: #F2506E;
 }
 
 .min-temp {
-  color: blue;
+  color: #03318C;
 }
 
 .icon-box {
-  display: flex;
   flex-direction: column;
   align-items: center;
 }
@@ -102,7 +103,6 @@
 }
 
 .etc-box {
-  display: flex;
   justify-content: space-evenly;
   width: 230px;
   margin-bottom: 20px;
